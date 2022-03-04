@@ -8,6 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseDriver {
 	
+	public static String baseUrl = "https://rahulshettyacademy.com/locatorspractice/";
 	public static WebDriver driver = null;
 	
 	@BeforeSuite

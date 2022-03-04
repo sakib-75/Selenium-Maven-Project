@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-04T15:53:04 BDT" name="Default suite" finished-at="2022-03-04T15:53:09 BDT" duration-ms="4783">
+  <suite started-at="2022-03-04T17:36:35 BDT" name="Default suite" finished-at="2022-03-04T17:36:42 BDT" duration-ms="6949">
     <groups>
     </groups>
-    <test started-at="2022-03-04T15:53:04 BDT" name="Default test" finished-at="2022-03-04T15:53:09 BDT" duration-ms="4783">
-      <class name="test_case_package.TC001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test_case_package.TC001@7e07db1f]" started-at="2022-03-04T15:53:02 BDT" name="setup" finished-at="2022-03-04T15:53:04 BDT" duration-ms="2018" status="PASS">
+    <test started-at="2022-03-04T17:36:35 BDT" name="Default test" finished-at="2022-03-04T17:36:42 BDT" duration-ms="6949">
+      <class name="test_case_package.TC002">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_case_package.TC002@7e07db1f]" started-at="2022-03-04T17:36:33 BDT" name="setup" finished-at="2022-03-04T17:36:35 BDT" duration-ms="1960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="locator()[pri:0, instance:test_case_package.TC001@7e07db1f]" started-at="2022-03-04T15:53:04 BDT" name="locator" finished-at="2022-03-04T15:53:09 BDT" duration-ms="4766" status="PASS">
+        <test-method signature="signup()[pri:0, instance:test_case_package.TC002@7e07db1f]" started-at="2022-03-04T17:36:35 BDT" name="signup" finished-at="2022-03-04T17:36:42 BDT" duration-ms="6927" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locator -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_case_package.TC001@7e07db1f]" started-at="2022-03-04T15:53:09 BDT" name="tearDown" finished-at="2022-03-04T15:53:09 BDT" duration-ms="600" status="PASS">
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_case_package.TC002@7e07db1f]" started-at="2022-03-04T17:36:42 BDT" name="tearDown" finished-at="2022-03-04T17:36:43 BDT" duration-ms="606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test_case_package.TC001 -->
+      </class> <!-- test_case_package.TC002 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
