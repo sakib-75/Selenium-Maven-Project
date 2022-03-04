@@ -25,6 +25,8 @@ public class TC002 extends BaseDriver{
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//button[normalize-space()='Sign In'])[1]")).click();
 		
+		Thread.sleep(2000);
+		
 
 	}
 
