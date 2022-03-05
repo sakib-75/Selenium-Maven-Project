@@ -7,11 +7,8 @@ import driver_package.BaseDriver;
 
 public class TC001 extends BaseDriver{
 	
-	@Test
+	@Test(priority = 0)
 	public void emptyInputField() throws InterruptedException {
-		
-		driver.get(baseUrl);
-		driver.manage().window().maximize();
 		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[normalize-space()='Sign In']")).click();
@@ -22,11 +19,10 @@ public class TC001 extends BaseDriver{
 	}
 	
 	
-	@Test
+	@Test(priority = 1)
 	public void clickCheckBox() throws InterruptedException {
 		
-		driver.get(baseUrl);
-		driver.manage().window().maximize();
+		driver.navigate().refresh();
 		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='chkboxOne']")).click();
@@ -36,6 +32,8 @@ public class TC001 extends BaseDriver{
 		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[normalize-space()='Sign In']")).click();
+		
+		Thread.sleep(2000);
 		
 	}
 

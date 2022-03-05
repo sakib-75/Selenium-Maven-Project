@@ -15,10 +15,13 @@ public class BaseDriver {
 	public void setup() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
+		
+		driver.get(baseUrl);
+		driver.manage().window().maximize();
 	}
 	
 	@AfterSuite
-	public void tearDown() {
+	public void endSession() {
 		driver.quit();
 	}
 	
