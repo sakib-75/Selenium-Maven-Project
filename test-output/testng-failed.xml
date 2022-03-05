@@ -6,8 +6,8 @@
       <class name="test_case_package.TC001">
         <methods>
           <include name="endSession"/>
-          <include name="emptyInputField"/>
           <include name="setup"/>
+          <include name="TC001_1"/>
         </methods>
       </class> <!-- test_case_package.TC001 -->
     </classes>

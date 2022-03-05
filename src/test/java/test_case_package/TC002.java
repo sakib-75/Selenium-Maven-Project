@@ -5,8 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
+import utilities_package.WarningMessage;
 
-public class TC002 extends BaseDriver{
+public class TC002 extends BaseDriver implements WarningMessage{
 	
 	@Test
 	public void signup() throws InterruptedException {
@@ -23,6 +24,7 @@ public class TC002 extends BaseDriver{
 		driver.findElement(By.xpath("(//button[normalize-space()='Sign In'])[1]")).click();
 		
 		Thread.sleep(2000);
+		warningMessage(driver, "* Incorrect username or password");
 		
 
 	}

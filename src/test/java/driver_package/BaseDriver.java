@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseDriver {
-	
+
 	public static String baseUrl = "https://rahulshettyacademy.com/locatorspractice/";
 	public static WebDriver driver = null;
 	
@@ -25,5 +25,5 @@ public class BaseDriver {
 		driver.quit();
 	}
 	
-
+	
 }
