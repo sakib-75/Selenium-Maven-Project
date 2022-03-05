@@ -11,9 +11,6 @@ public class TC002 extends BaseDriver{
 	@Test
 	public void signup() throws InterruptedException {
 		
-		driver.get(baseUrl);
-		driver.manage().window().maximize();
-		
 		Thread.sleep(2000);
 		WebElement userName = driver.findElement(By.id("inputUsername"));
 		userName.sendKeys("sakib");

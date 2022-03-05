@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-05T16:12:35 BDT" name="Default suite" finished-at="2022-03-05T16:12:47 BDT" duration-ms="12346">
+  <suite started-at="2022-03-05T16:57:22 BDT" name="Default suite" finished-at="2022-03-05T16:57:30 BDT" duration-ms="8209">
     <groups>
     </groups>
-    <test started-at="2022-03-05T16:12:35 BDT" name="Default test" finished-at="2022-03-05T16:12:47 BDT" duration-ms="12346">
-      <class name="test_case_package.TC001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test_case_package.TC001@1189dd52]" started-at="2022-03-05T16:12:32 BDT" name="setup" finished-at="2022-03-05T16:12:35 BDT" duration-ms="2951" status="PASS">
+    <test started-at="2022-03-05T16:57:22 BDT" name="Default test" finished-at="2022-03-05T16:57:30 BDT" duration-ms="8209">
+      <class name="test_case_package.TC002">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_case_package.TC002@7e07db1f]" started-at="2022-03-05T16:57:19 BDT" name="setup" finished-at="2022-03-05T16:57:22 BDT" duration-ms="3428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="emptyInputField()[pri:0, instance:test_case_package.TC001@1189dd52]" started-at="2022-03-05T16:12:35 BDT" name="emptyInputField" finished-at="2022-03-05T16:12:39 BDT" duration-ms="4068" status="PASS">
+        <test-method signature="signup()[pri:0, instance:test_case_package.TC002@7e07db1f]" started-at="2022-03-05T16:57:22 BDT" name="signup" finished-at="2022-03-05T16:57:30 BDT" duration-ms="8190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emptyInputField -->
-        <test-method signature="clickCheckBox()[pri:1, instance:test_case_package.TC001@1189dd52]" started-at="2022-03-05T16:12:39 BDT" name="clickCheckBox" finished-at="2022-03-05T16:12:47 BDT" duration-ms="8246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickCheckBox -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:test_case_package.TC001@1189dd52]" started-at="2022-03-05T16:12:47 BDT" name="endSession" finished-at="2022-03-05T16:12:48 BDT" duration-ms="603" status="PASS">
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="endSession()[pri:0, instance:test_case_package.TC002@7e07db1f]" started-at="2022-03-05T16:57:30 BDT" name="endSession" finished-at="2022-03-05T16:57:31 BDT" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
-      </class> <!-- test_case_package.TC001 -->
+      </class> <!-- test_case_package.TC002 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
