@@ -5,9 +5,11 @@
     <classes>
       <class name="test_case_package2.TC001">
         <methods>
+          <include name="checkout"/>
           <include name="endSession"/>
-          <include name="flights"/>
           <include name="setup"/>
+          <include name="promoCodeEmpty"/>
+          <include name="promoCodeWrong"/>
         </methods>
       </class> <!-- test_case_package2.TC001 -->
     </classes>

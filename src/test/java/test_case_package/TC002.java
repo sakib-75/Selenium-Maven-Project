@@ -13,7 +13,7 @@ public class TC002 extends BaseDriver implements WarningMessage {
 
 	@Test
 	public void signup() throws InterruptedException {
-		
+
 		driver.get("https://rahulshettyacademy.com/locatorspractice");
 
 		// Implicit wait
@@ -27,7 +27,10 @@ public class TC002 extends BaseDriver implements WarningMessage {
 
 		driver.findElement(By.xpath("(//button[normalize-space()='Sign In'])[1]")).click();
 
-		warningMessage(driver, "* Incorrect username or password");
+		String actualMsg = driver.findElement(By.cssSelector("p.error")).getText();
+		String expectedMsg = "* Incorrect username or password";
+
+		warningMessage(actualMsg, expectedMsg);
 
 	}
 
