@@ -13,6 +13,8 @@ public class TC002 extends BaseDriver implements WarningMessage {
 
 	@Test
 	public void signup() throws InterruptedException {
+		
+		driver.get("https://rahulshettyacademy.com/locatorspractice");
 
 		// Implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

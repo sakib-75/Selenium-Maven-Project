@@ -15,6 +15,8 @@ public class TC003 extends BaseDriver{
 	@Test
 	public void tc003() throws InterruptedException {
 		
+		driver.get("https://rahulshettyacademy.com/locatorspractice");
+		
 		//Implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
