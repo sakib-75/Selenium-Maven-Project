@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-08T12:13:34 BDT" name="Default suite" finished-at="2022-03-08T12:13:36 BDT" duration-ms="2015">
+  <suite started-at="2022-03-08T14:01:17 BDT" name="Default suite" finished-at="2022-03-08T14:01:25 BDT" duration-ms="8031">
     <groups>
     </groups>
-    <test started-at="2022-03-08T12:13:34 BDT" name="Default test" finished-at="2022-03-08T12:13:36 BDT" duration-ms="2015">
+    <test started-at="2022-03-08T14:01:17 BDT" name="Default test" finished-at="2022-03-08T14:01:25 BDT" duration-ms="8031">
       <class name="test_case_package2.TC001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test_case_package2.TC001@7e07db1f]" started-at="2022-03-08T12:13:32 BDT" name="setup" finished-at="2022-03-08T12:13:34 BDT" duration-ms="2128" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_case_package2.TC001@7e07db1f]" started-at="2022-03-08T14:01:15 BDT" name="setup" finished-at="2022-03-08T14:01:17 BDT" duration-ms="2122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="flights()[pri:0, instance:test_case_package2.TC001@7e07db1f]" started-at="2022-03-08T12:13:34 BDT" name="flights" finished-at="2022-03-08T12:13:36 BDT" duration-ms="1993" status="PASS">
+        <test-method signature="flights()[pri:0, instance:test_case_package2.TC001@7e07db1f]" started-at="2022-03-08T14:01:17 BDT" name="flights" finished-at="2022-03-08T14:01:25 BDT" duration-ms="8013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:test_case_package2.TC001@7e07db1f]" started-at="2022-03-08T12:13:36 BDT" name="endSession" finished-at="2022-03-08T12:13:37 BDT" duration-ms="613" status="PASS">
+        <test-method is-config="true" signature="endSession()[pri:0, instance:test_case_package2.TC001@7e07db1f]" started-at="2022-03-08T14:01:25 BDT" name="endSession" finished-at="2022-03-08T14:01:26 BDT" duration-ms="631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
