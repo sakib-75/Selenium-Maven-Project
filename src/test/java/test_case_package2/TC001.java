@@ -13,14 +13,14 @@ import driver_package.BaseDriver;
 public class TC001 extends BaseDriver {
 
 	@Test
-	public void flights() throws InterruptedException {
+	public void addToCart() throws InterruptedException {
 
 		driver.get("https://rahulshettyacademy.com/seleniumPractise");
 
 		// Implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-		String[] producNametArr = { "Carrot", "Brocolli", "Cucumber", "Beetroot" };
+		String[] producNametArr = { "Carrot", "Brocolli", "Cucumber", "Beetroot", "Potato" };
 		List<String> productNameList = Arrays.asList(producNametArr); // Convert Array to List
 		int count = 0;
 
