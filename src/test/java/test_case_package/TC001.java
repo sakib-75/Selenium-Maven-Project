@@ -1,22 +1,19 @@
 package test_case_package;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
+import utilities_package.ImplicitlyWait;
 import utilities_package.WarningMessage;
 
-public class TC001 extends BaseDriver implements WarningMessage {
+public class TC001 extends BaseDriver implements WarningMessage, ImplicitlyWait {
 
 	@Test(priority = 0)
 	public void TC001_1() throws InterruptedException {
 
 		driver.get("https://rahulshettyacademy.com/locatorspractice");
-
-		// Implicit wait
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		implicitWait(driver);
 
 		driver.findElement(By.xpath("//button[normalize-space()='Sign In']")).click();
 
@@ -32,9 +29,7 @@ public class TC001 extends BaseDriver implements WarningMessage {
 
 		driver.get("https://rahulshettyacademy.com/locatorspractice");
 		driver.navigate().refresh();
-
-		// Implicit wait
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		implicitWait(driver);
 
 		driver.findElement(By.xpath("//input[@id='chkboxOne']")).click();
 

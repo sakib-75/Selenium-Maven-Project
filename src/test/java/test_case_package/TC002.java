@@ -1,23 +1,20 @@
 package test_case_package;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
+import utilities_package.ImplicitlyWait;
 import utilities_package.WarningMessage;
 
-public class TC002 extends BaseDriver implements WarningMessage {
+public class TC002 extends BaseDriver implements WarningMessage, ImplicitlyWait {
 
 	@Test
 	public void signup() throws InterruptedException {
 
 		driver.get("https://rahulshettyacademy.com/locatorspractice");
-
-		// Implicit wait
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		implicitWait(driver);
 
 		WebElement userName = driver.findElement(By.id("inputUsername"));
 		userName.sendKeys("sakib");

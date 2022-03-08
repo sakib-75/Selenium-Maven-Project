@@ -28,7 +28,7 @@ public class BaseDriver {
 
 	@AfterSuite
 	public void endSession() {
-		//driver.quit();
+		driver.quit();
 	}
 
 	

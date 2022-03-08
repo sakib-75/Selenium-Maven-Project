@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-08T16:44:25 BDT" name="Default suite" finished-at="2022-03-08T16:44:29 BDT" duration-ms="3338">
+  <suite started-at="2022-03-08T19:09:36 BDT" name="Default suite" finished-at="2022-03-08T19:09:49 BDT" duration-ms="12578">
     <groups>
     </groups>
-    <test started-at="2022-03-08T16:44:25 BDT" name="Default test" finished-at="2022-03-08T16:44:29 BDT" duration-ms="3338">
-      <class name="test_case_package.TC001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test_case_package.TC001@564fabc8]" started-at="2022-03-08T16:44:23 BDT" name="setup" finished-at="2022-03-08T16:44:25 BDT" duration-ms="2066" status="PASS">
+    <test started-at="2022-03-08T19:09:36 BDT" name="Default test" finished-at="2022-03-08T19:09:49 BDT" duration-ms="12578">
+      <class name="test_case_package2.TC003">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_case_package2.TC003@223d2c72]" started-at="2022-03-08T19:09:34 BDT" name="setup" finished-at="2022-03-08T19:09:36 BDT" duration-ms="2149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC001_1()[pri:0, instance:test_case_package.TC001@564fabc8]" started-at="2022-03-08T16:44:25 BDT" name="TC001_1" finished-at="2022-03-08T16:44:27 BDT" duration-ms="2007" status="PASS">
+        <test-method signature="addToCart()[pri:0, instance:test_case_package2.TC003@223d2c72]" started-at="2022-03-08T19:09:36 BDT" name="addToCart" finished-at="2022-03-08T19:09:48 BDT" duration-ms="11761" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC001_1 -->
-        <test-method signature="TC001_2()[pri:1, instance:test_case_package.TC001@564fabc8]" started-at="2022-03-08T16:44:27 BDT" name="TC001_2" finished-at="2022-03-08T16:44:29 BDT" duration-ms="1305" status="PASS">
+        </test-method> <!-- addToCart -->
+        <test-method signature="checkout()[pri:1, instance:test_case_package2.TC003@223d2c72]" started-at="2022-03-08T19:09:48 BDT" name="checkout" finished-at="2022-03-08T19:09:48 BDT" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC001_2 -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:test_case_package.TC001@564fabc8]" started-at="2022-03-08T16:44:29 BDT" name="endSession" finished-at="2022-03-08T16:44:29 BDT" duration-ms="0" status="PASS">
+        </test-method> <!-- checkout -->
+        <test-method signature="placeOrder()[pri:2, instance:test_case_package2.TC003@223d2c72]" started-at="2022-03-08T19:09:48 BDT" name="placeOrder" finished-at="2022-03-08T19:09:49 BDT" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method is-config="true" signature="endSession()[pri:0, instance:test_case_package2.TC003@223d2c72]" started-at="2022-03-08T19:09:49 BDT" name="endSession" finished-at="2022-03-08T19:09:49 BDT" duration-ms="610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
-      </class> <!-- test_case_package.TC001 -->
+      </class> <!-- test_case_package2.TC003 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

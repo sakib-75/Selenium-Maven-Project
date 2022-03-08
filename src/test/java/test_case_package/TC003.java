@@ -9,16 +9,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
+import utilities_package.ImplicitlyWait;
 
-public class TC003 extends BaseDriver{
+public class TC003 extends BaseDriver implements ImplicitlyWait{
 	
 	@Test
 	public void tc003() throws InterruptedException {
 		
 		driver.get("https://rahulshettyacademy.com/locatorspractice");
-		
-		//Implicit wait
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		implicitWait(driver);
 		
 		//Explicit wait
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
