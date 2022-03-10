@@ -1,5 +1,6 @@
 package test_case_package2;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,15 +10,15 @@ import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
 import utilities_package.ImplicitlyWait;
+import utilities_package.TakeScreenshot;
 import utilities_package.WarningMessage;
 
-public class TC001 extends BaseDriver implements WarningMessage, ImplicitlyWait {
+public class TC001 extends BaseDriver implements WarningMessage, ImplicitlyWait, TakeScreenshot {
 
 	@Test(priority = 0)
 	public void addToCart() {
 
 		driver.get("https://rahulshettyacademy.com/seleniumPractise");
-
 		implicitWait(driver);
 
 		String[] producNametArr = { "Carrot", "Brocolli", "Cucumber", "Potato" };
@@ -44,13 +45,16 @@ public class TC001 extends BaseDriver implements WarningMessage, ImplicitlyWait 
 	}
 
 	@Test(priority = 1)
-	public void checkout() {
+	public void checkout() throws IOException, InterruptedException {
 		
 		implicitWait(driver);
 
 		driver.findElement(By.xpath("//a[@class='cart-icon']")).click();
 
 		driver.findElement(By.xpath("//button[text()='PROCEED TO CHECKOUT']")).click();
+		
+		//Thread.sleep(1000);
+		//takeScreenshot(driver, "C:\\Users\\LENOVO\\Pictures\\schh.png");
 
 	}
 

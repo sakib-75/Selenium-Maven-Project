@@ -8,7 +8,7 @@ public class TC002 extends TC001 {
 
 	@Test(priority = 2)
 	public void promoCodeEmpty() throws InterruptedException {
-		
+
 		implicitWait(driver);
 
 		driver.findElement(By.className("promoBtn")).click();
@@ -23,7 +23,7 @@ public class TC002 extends TC001 {
 
 	@Test(priority = 3)
 	public void promoCodeWrong() {
-		
+
 		implicitWait(driver);
 		driver.navigate().refresh();
 
@@ -41,7 +41,7 @@ public class TC002 extends TC001 {
 
 	@Test(priority = 4)
 	public void promoCodeRight() {
-		
+
 		implicitWait(driver);
 		driver.navigate().refresh();
 
