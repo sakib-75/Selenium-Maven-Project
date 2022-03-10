@@ -54,7 +54,7 @@ public class TC001 extends BaseDriver implements WarningMessage, ImplicitlyWait,
 		driver.findElement(By.xpath("//button[text()='PROCEED TO CHECKOUT']")).click();
 		
 		//Thread.sleep(1000);
-		//takeScreenshot(driver, "C:\\Users\\LENOVO\\Pictures\\schh.png");
+		//takeScreenshot(driver, "C:\\Users\\LENOVO\\Pictures\\screenshot.png");
 
 	}
 
