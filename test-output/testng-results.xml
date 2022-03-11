@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-11T02:55:24 BDT" name="Default suite" finished-at="2022-03-11T02:55:32 BDT" duration-ms="8429">
+  <suite started-at="2022-03-11T15:50:20 BDT" name="Default suite" finished-at="2022-03-11T15:50:25 BDT" duration-ms="4532">
     <groups>
     </groups>
-    <test started-at="2022-03-11T02:55:24 BDT" name="Default test" finished-at="2022-03-11T02:55:32 BDT" duration-ms="8429">
-      <class name="action_test.AlertsHandling">
-        <test-method is-config="true" signature="setup()[pri:0, instance:action_test.AlertsHandling@49ec71f8]" started-at="2022-03-11T02:55:22 BDT" name="setup" finished-at="2022-03-11T02:55:24 BDT" duration-ms="2107" status="PASS">
+    <test started-at="2022-03-11T15:50:20 BDT" name="Default test" finished-at="2022-03-11T15:50:25 BDT" duration-ms="4532">
+      <class name="action_test.WindowsHandling">
+        <test-method is-config="true" signature="setup()[pri:0, instance:action_test.WindowsHandling@564fabc8]" started-at="2022-03-11T15:50:18 BDT" name="setup" finished-at="2022-03-11T15:50:20 BDT" duration-ms="2105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="alertsHandling()[pri:0, instance:action_test.AlertsHandling@49ec71f8]" started-at="2022-03-11T02:55:24 BDT" name="alertsHandling" finished-at="2022-03-11T02:55:32 BDT" duration-ms="8409" status="PASS">
+        <test-method signature="window()[pri:0, instance:action_test.WindowsHandling@564fabc8]" started-at="2022-03-11T15:50:20 BDT" name="window" finished-at="2022-03-11T15:50:25 BDT" duration-ms="4501" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alertsHandling -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:action_test.AlertsHandling@49ec71f8]" started-at="2022-03-11T02:55:32 BDT" name="endSession" finished-at="2022-03-11T02:55:33 BDT" duration-ms="646" status="PASS">
+        </test-method> <!-- window -->
+        <test-method is-config="true" signature="endSession()[pri:0, instance:action_test.WindowsHandling@564fabc8]" started-at="2022-03-11T15:50:25 BDT" name="endSession" finished-at="2022-03-11T15:50:25 BDT" duration-ms="639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
-      </class> <!-- action_test.AlertsHandling -->
+      </class> <!-- action_test.WindowsHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
