@@ -10,8 +10,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseDriver {
 
-	public static WebDriver driver = null;
-	public static Actions actions = null;
+	public static WebDriver driver;
+	public static Actions actions;
 
 	@BeforeSuite
 	public void setup() {
