@@ -55,6 +55,7 @@ public class LocatorsPracticePOM {
 	By phoneInp = By.xpath("//input[@placeholder='Phone Number']");
 	By resetBtn = By.className("reset-pwd-btn");
 	By goToLoginBtn = By.className("go-to-login-btn");
+	By infoMsg = By.cssSelector("p.infoMsg");
 
 	public WebElement nameInp() {
 		return driver.findElement(nameInp);
@@ -74,6 +75,17 @@ public class LocatorsPracticePOM {
 
 	public WebElement goToLoginBtn() {
 		return driver.findElement(goToLoginBtn);
+	}
+
+	public WebElement infoMsg() {
+		return driver.findElement(infoMsg);
+	}
+	
+	// Home page
+	By loginSuccess = By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/p[1]");
+	
+	public WebElement loginSuccess() {
+		return driver.findElement(loginSuccess);
 	}
 
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="action_test.MouseOver">
+      <class name="test_cases1.ForgotPassword">
         <methods>
           <include name="endSession"/>
+          <include name="TC04"/>
           <include name="setup"/>
-          <include name="teamSchedule"/>
         </methods>
-      </class> <!-- action_test.MouseOver -->
+      </class> <!-- test_cases1.ForgotPassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
