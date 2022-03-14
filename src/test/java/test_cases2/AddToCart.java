@@ -3,9 +3,6 @@ package test_cases2;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -28,7 +25,7 @@ public class AddToCart extends BaseDriver implements WarningMessage, ImplicitlyW
 		List<String> productNameList = Arrays.asList(producNametArr); // Convert Array to List
 		int count = 0;
 
-		List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
+		List<WebElement> products = pom.allProductTitle();
 
 		for (int i = 0; i < products.size(); i++) {
 
@@ -36,7 +33,7 @@ public class AddToCart extends BaseDriver implements WarningMessage, ImplicitlyW
 			String productName = productTitle[0].trim();
 
 			if (productNameList.contains(productName)) {
-				driver.findElements(By.xpath("(//div[@class='product-action'])")).get(i).click();
+				pom.allAddToCart().get(i).click();
 
 				count++;
 				if (count == productNameList.size()) {
@@ -49,15 +46,15 @@ public class AddToCart extends BaseDriver implements WarningMessage, ImplicitlyW
 
 	@Test(priority = 2)
 	public void checkout() throws IOException, InterruptedException {
-		
+
 		TestCases2POM pom = new TestCases2POM(driver);
 		implicitWait(driver);
 
 		pom.cartIcon().click();
 
 		pom.checkOut().click();
-		
-		// Thread.sleep(1000);
+
+		Thread.sleep(1000);
 		// takeScreenshot(driver, "C:\\Users\\LENOVO\\Pictures\\screenshot.png");
 
 	}

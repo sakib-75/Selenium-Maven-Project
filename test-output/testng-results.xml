@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-14T18:00:49 BDT" name="Default suite" finished-at="2022-03-14T18:00:52 BDT" duration-ms="2784">
+  <suite started-at="2022-03-14T18:37:52 BDT" name="Default suite" finished-at="2022-03-14T18:37:56 BDT" duration-ms="3652">
     <groups>
     </groups>
-    <test started-at="2022-03-14T18:00:49 BDT" name="Default test" finished-at="2022-03-14T18:00:52 BDT" duration-ms="2784">
+    <test started-at="2022-03-14T18:37:52 BDT" name="Default test" finished-at="2022-03-14T18:37:56 BDT" duration-ms="3652">
       <class name="test_cases2.AddToCart">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test_cases2.AddToCart@223d2c72]" started-at="2022-03-14T18:00:46 BDT" name="setup" finished-at="2022-03-14T18:00:49 BDT" duration-ms="2258" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_cases2.AddToCart@223d2c72]" started-at="2022-03-14T18:37:50 BDT" name="setup" finished-at="2022-03-14T18:37:52 BDT" duration-ms="2176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addToCart()[pri:1, instance:test_cases2.AddToCart@223d2c72]" started-at="2022-03-14T18:00:49 BDT" name="addToCart" finished-at="2022-03-14T18:00:51 BDT" duration-ms="2652" status="PASS">
+        <test-method signature="addToCart()[pri:1, instance:test_cases2.AddToCart@223d2c72]" started-at="2022-03-14T18:37:52 BDT" name="addToCart" finished-at="2022-03-14T18:37:55 BDT" duration-ms="2521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method signature="checkout()[pri:2, instance:test_cases2.AddToCart@223d2c72]" started-at="2022-03-14T18:00:51 BDT" name="checkout" finished-at="2022-03-14T18:00:52 BDT" duration-ms="101" status="PASS">
+        <test-method signature="checkout()[pri:2, instance:test_cases2.AddToCart@223d2c72]" started-at="2022-03-14T18:37:55 BDT" name="checkout" finished-at="2022-03-14T18:37:56 BDT" duration-ms="1104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkout -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:test_cases2.AddToCart@223d2c72]" started-at="2022-03-14T18:00:52 BDT" name="endSession" finished-at="2022-03-14T18:00:52 BDT" duration-ms="609" status="PASS">
+        <test-method is-config="true" signature="endSession()[pri:0, instance:test_cases2.AddToCart@223d2c72]" started-at="2022-03-14T18:37:56 BDT" name="endSession" finished-at="2022-03-14T18:37:57 BDT" duration-ms="610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->

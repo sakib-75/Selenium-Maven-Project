@@ -1,5 +1,7 @@
 package page_object_model;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,11 +16,12 @@ public class TestCases2POM {
 		PageFactory.initElements(driver, this);
 	}
 
+	// Home page
 	@FindBy(css = "h4.product-name")
-	WebElement allProductTitle;
+	List<WebElement> allProductTitle;
 
 	@FindBy(xpath = "//div[@class='product-action']")
-	WebElement allAddToCart;
+	List<WebElement> allAddToCart;
 
 	@FindBy(xpath = "//a[@class='cart-icon']")
 	WebElement cartIcon;
@@ -26,11 +29,11 @@ public class TestCases2POM {
 	@FindBy(xpath = "//button[text()='PROCEED TO CHECKOUT']")
 	WebElement checkOut;
 
-	public WebElement allProductTitle() {
+	public List<WebElement> allProductTitle() {
 		return allProductTitle;
 	}
 
-	public WebElement allAddToCart() {
+	public List<WebElement> allAddToCart() {
 		return allAddToCart;
 	}
 
