@@ -42,6 +42,8 @@ public class AddToCart extends BaseDriver implements WarningMessage, ImplicitlyW
 			}
 		}
 
+		System.out.println("Total product in cart: " + count);
+
 	}
 
 	@Test(priority = 2)
@@ -54,7 +56,9 @@ public class AddToCart extends BaseDriver implements WarningMessage, ImplicitlyW
 		pom.checkOut().click();
 
 		Thread.sleep(1000);
-		// takeScreenshot(driver, "C:\\Users\\LENOVO\\Pictures\\screenshot.png");
+
+		// String screenshotPath = "C:\\Users\\LENOVO\\Pictures\\screenshot.png";
+		// takeScreenshot(driver, screenshotPath);
 
 	}
 

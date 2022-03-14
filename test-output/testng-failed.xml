@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_cases2.PromoCode">
+      <class name="test_cases2.PlaceOrder">
         <methods>
-          <include name="promoCodeWrong"/>
+          <include name="placeOrder"/>
           <include name="endSession"/>
-          <include name="promoCodeRight"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- test_cases2.PromoCode -->
+      </class> <!-- test_cases2.PlaceOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

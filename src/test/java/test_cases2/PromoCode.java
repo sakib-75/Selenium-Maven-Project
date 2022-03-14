@@ -17,7 +17,7 @@ public class PromoCode extends AddToCart {
 		String expectedMsg = "Empty code ..!";
 
 		warningMessage(actualMsg, expectedMsg);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 	}
 
