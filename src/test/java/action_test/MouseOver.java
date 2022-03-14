@@ -1,53 +1,47 @@
 package action_test;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
+import page_object_model.MousOverPOM;
+import utilities_package.ImplicitlyWait;
 
-public class MouseOver extends BaseDriver {
+public class MouseOver extends BaseDriver implements ImplicitlyWait {
 
-	@Test(priority = 0)
-	public void hover() throws InterruptedException {
+	@Test(priority = 1)
+	public void teamSchedule() throws InterruptedException {
 
-		driver.get("https://www.amazon.com/");
-		WebElement el = driver.findElement(By.xpath("//a[@id='nav-link-accountList']"));
+		MousOverPOM pom = new MousOverPOM(driver);
+		driver.get("https://www.cricbuzz.com");
+		implicitWait(driver);
 
+		WebElement el = pom.teamDropDown();
 		actions.moveToElement(el).build().perform();
+
+		actions.moveToElement(pom.teamBD()).click().build().perform();
+
+		actions.moveToElement(pom.teamSchedule()).click().build().perform();
 
 		Thread.sleep(1000);
 
 	}
 
-	@Test(priority = 1)
-	public void inputSearch() throws InterruptedException {
+	@Test(priority = 2)
+	public void search() throws InterruptedException {
 
-		WebElement inpBox = driver.findElement(By.id("twotabsearchtextbox"));
+		MousOverPOM pom = new MousOverPOM(driver);
+		pom.homeLogo().click();
 
-		actions.moveToElement(inpBox).click().keyDown(Keys.SHIFT).sendKeys("computer").build().perform();
+		Actions search = actions.moveToElement(pom.searchInp()).click().sendKeys("shakib");
+		search.sendKeys(Keys.ENTER).build().perform();
 
-		actions.moveToElement(driver.findElement(By.id("nav-search-submit-button"))).click().build().perform();
+		pom.sahSearch().click();
 
 		Thread.sleep(2000);
-
-	}
-
-	@Test(priority = 2)
-	public void menuHover() throws InterruptedException {
-
-		driver.switchTo().newWindow(WindowType.TAB);
-
-		driver.get("https://www.daraz.com.bd/");
-
-		WebElement menuItem1 = driver.findElement(By.xpath("(//a)[21]"));
-		actions.moveToElement(menuItem1).build().perform();
-
-		WebElement menuItem2 = driver.findElement(By.xpath("(//a)[51]"));
-		actions.moveToElement(menuItem2).click().build().perform();
-
+		
 	}
 
 }
