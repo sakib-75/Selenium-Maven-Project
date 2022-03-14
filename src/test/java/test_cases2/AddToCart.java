@@ -48,7 +48,6 @@ public class AddToCart extends BaseDriver implements WarningMessage, ImplicitlyW
 	public void checkout() throws IOException, InterruptedException {
 
 		TestCases2POM pom = new TestCases2POM(driver);
-		implicitWait(driver);
 
 		pom.cartIcon().click();
 

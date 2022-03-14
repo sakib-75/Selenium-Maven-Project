@@ -45,4 +45,33 @@ public class TestCases2POM {
 		return checkOut;
 	}
 
+	// Promo code page
+	@FindBy(className = "promoCode")
+	WebElement promoCodeInp;
+
+	@FindBy(className = "promoBtn")
+	WebElement promoCodeApply;
+
+	@FindBy(css = "span.promoInfo")
+	WebElement promoInfo;
+
+	@FindBy(xpath = "//button[text()='Place Order']")
+	WebElement placeOrderBtn;
+
+	public WebElement promoCodeInp() {
+		return promoCodeInp;
+	}
+
+	public WebElement promoCodeApply() {
+		return promoCodeApply;
+	}
+
+	public WebElement promoInfo() {
+		return promoInfo;
+	}
+
+	public WebElement placeOrderBtn() {
+		return placeOrderBtn;
+	}
+
 }

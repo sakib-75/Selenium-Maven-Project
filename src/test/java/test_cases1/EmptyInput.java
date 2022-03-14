@@ -30,7 +30,6 @@ public class EmptyInput extends BaseDriver implements WarningMessage, Implicitly
 
 		LocatorsPracticePOM lp = new LocatorsPracticePOM(driver);
 		driver.navigate().refresh();
-		implicitWait(driver);
 
 		lp.checkBox1().click();
 
