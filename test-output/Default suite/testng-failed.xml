@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_cases1.ForgotPassword">
+      <class name="test_cases2.AddToCart">
         <methods>
           <include name="endSession"/>
-          <include name="TC04"/>
+          <include name="checkout"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- test_cases1.ForgotPassword -->
+      </class> <!-- test_cases2.AddToCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
