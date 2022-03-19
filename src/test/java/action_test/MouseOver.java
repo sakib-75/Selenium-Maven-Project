@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
 import page_object_model.MousOverPOM;
-import utilities_package.ImplicitlyWait;
+import utilities_package.Utilities;
 
-public class MouseOver extends BaseDriver implements ImplicitlyWait {
+public class MouseOver extends BaseDriver implements Utilities {
 
 	@Test(priority = 1)
 	public void teamSchedule() throws InterruptedException {
@@ -41,7 +41,7 @@ public class MouseOver extends BaseDriver implements ImplicitlyWait {
 		pom.sahSearch().click();
 
 		Thread.sleep(2000);
-		
+
 	}
 
 }
