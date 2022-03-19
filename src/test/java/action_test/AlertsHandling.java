@@ -4,10 +4,9 @@ import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
 import page_object_model.AlertsHandlingPOM;
-import utilities_package.ImplicitlyWait;
-import utilities_package.WarningMessage;
+import utilities_package.Utilities;
 
-public class AlertsHandling extends BaseDriver implements ImplicitlyWait, WarningMessage {
+public class AlertsHandling extends BaseDriver implements Utilities {
 
 	@Test
 	public void alertsHandling() throws InterruptedException {
