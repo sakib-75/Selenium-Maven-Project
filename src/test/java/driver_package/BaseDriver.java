@@ -23,7 +23,6 @@ public class BaseDriver {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(option);
 
-		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 
 		// Create actions object
