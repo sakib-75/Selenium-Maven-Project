@@ -4,10 +4,9 @@ import org.testng.annotations.Test;
 
 import driver_package.BaseDriver;
 import page_object_model.LocatorsPracticePOM;
-import utilities_package.ImplicitlyWait;
-import utilities_package.WarningMessage;
+import utilities_package.Utilities;
 
-public class SignUp extends BaseDriver implements WarningMessage, ImplicitlyWait {
+public class SignUp extends BaseDriver implements Utilities {
 
 	@Test
 	public void TC03() {
