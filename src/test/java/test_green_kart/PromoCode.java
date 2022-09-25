@@ -1,4 +1,4 @@
-package test_cases2;
+package test_green_kart;
 
 import org.testng.annotations.Test;
 

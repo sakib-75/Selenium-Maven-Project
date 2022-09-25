@@ -18,30 +18,20 @@ public interface Utilities {
 	}
 
 	default void takeScreenshot(WebDriver driver, String fileWithPath) throws IOException {
-
 		// Convert web driver object to TakeScreenshot
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
-
 		// Call getScreenshotAs method to create image file
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-
 		// Move image file to new destination
 		File DestFile = new File(fileWithPath);
-
 		// Copy file at destination
 		FileUtils.copyFile(SrcFile, DestFile);
-
 	}
 
 	default void warningMessage(String aMsg, String eMsg) {
-
-		String actualMessage = aMsg;
-		String expectedMessage = eMsg;
-
-		System.out.println("Actual Message: " + actualMessage);
-		System.out.println("Expected Message: " + expectedMessage);
-
-		Assert.assertEquals(actualMessage, expectedMessage);
+		System.out.println("Actual Message: " + aMsg);
+		System.out.println("Expected Message: " + eMsg);
+		Assert.assertEquals(aMsg, eMsg);
 
 	}
 

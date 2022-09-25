@@ -1,4 +1,4 @@
-package test_cases1;
+package test_locatorspractice;
 
 import org.testng.annotations.Test;
 

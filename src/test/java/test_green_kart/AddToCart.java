@@ -1,4 +1,4 @@
-package test_cases2;
+package test_green_kart;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -19,8 +19,8 @@ public class AddToCart extends BaseDriver implements Utilities {
 		driver.get("https://rahulshettyacademy.com/seleniumPractise");
 		implicitWait(driver);
 
-		String[] producNametArr = { "Carrot", "Brocolli", "Cucumber", "Potato" };
-		List<String> productNameList = Arrays.asList(producNametArr); // Convert Array to List
+		String[] productNameArr = { "Carrot", "Brocolli", "Cucumber", "Potato" };
+		List<String> productNameList = Arrays.asList(productNameArr); // Convert Array to List
 		int count = 0;
 
 		List<WebElement> products = pom.allProductTitle();

@@ -1,4 +1,4 @@
-package test_cases1;
+package test_locatorspractice;
 
 import java.time.Duration;
 
@@ -56,13 +56,9 @@ public class ForgotPassword extends BaseDriver implements Utilities {
 	}
 
 	public static String getPassword(LocatorsPracticePOM lp) {
-
 		String text = lp.infoMsg().getText();
 		String[] passArr = text.split("'");
-		String password = passArr[1].split("'")[0];
-
-		return password;
-
+		return passArr[1].split("'")[0];
 	}
 
 }
